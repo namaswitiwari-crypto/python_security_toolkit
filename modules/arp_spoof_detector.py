@@ -1,4 +1,6 @@
 import scapy.all as scapy
+from utils.network_utils import is_valid_ip
+
 
 
 def get_mac(ip_address):

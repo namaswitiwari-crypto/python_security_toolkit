@@ -1,11 +1,6 @@
+
 import subprocess
-import re
-
-
-def is_valid_mac(mac):
-    """Validate a MAC address."""
-    pattern = r"^([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$"
-    return bool(re.match(pattern, mac))
+from utils.network_utils import is_valid_mac
 
 
 def change_mac(interface, new_mac):
